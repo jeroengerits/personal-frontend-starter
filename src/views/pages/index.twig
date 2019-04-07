@@ -1,0 +1,6 @@
+{% extends "layouts/base.twig" %}
+{% block content %}
+    <div class="bg-yellow">
+        {% include('partials/hello.twig') with {"title": title} only %}
+    </div>
+{% endblock %}
