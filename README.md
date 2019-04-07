@@ -1,39 +1,38 @@
 # Frontend Starter
-Very basic starter for frontend experiments. DO NOT use in production.
+Basic starter for frontend throw-away experiments and design explorations. You probably don't like it or need it. Also, please DO NOT USE IN PRODUCTION.
 
 ------
 
-## Requirements
-- PHP
-- Nodejs
+## Out of the box
+- Twig Templates
+- Tailwind CSS 
+- Laravel Mix for asset compilation
+- Purge CSS Optimizer
+- .env file support
+- primitive router (switch/case)
 
 ## Installation
-- Install PHP dependencies
 ```bash
-$ composer install
-```
-- Install Javascript dependencies
-```bash
-$ npm install
-```
-
-## Compiling Assets
-- Development
-```bash
-$ npm run dev
-```
-- Watch changes
-```bash
-$ npm run watch
-```
-- Production
-```bash
-$ npm run prod
+composer install && npm install
 ```
 
 ## Local Webserver
 ```bash
 php -S localhost:8000 -t web/
+```
+
+## Compiling Assets
+- **Development** - does not minify and purge the css
+```bash
+npm run dev
+```
+- **Watch changes** - recompile if a file changes, does not minify and purge the css
+```bash
+npm run watch
+```
+- **Production** - compiles assets the most optimal way
+```bash
+npm run prod
 ```
 
 ## Defining Routes
