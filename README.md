@@ -6,6 +6,7 @@ Basic starter for frontend throw-away experiments and design explorations. You p
 ## Out of the box
 - Twig Templates
 - Tailwind CSS 
+- IBM Plex font (sans, serif, mono and all variants)
 - Laravel Mix for asset compilation
 - Purge CSS Optimizer
 - .env file support
