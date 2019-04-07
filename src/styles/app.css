@@ -1,7 +1,4 @@
-@tailwind preflight;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwind.css";
 .custom-hello {
     @apply text-red;
 }
